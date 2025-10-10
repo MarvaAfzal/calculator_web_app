@@ -1,0 +1,192 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ecf0f3;
+  gap: 30px;
+}
+/* ===== History Section ===== */
+#history {
+  width: 20%;
+  height: 70vh;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ecf0f3;
+  box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #fff;
+}
+
+#history h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#history-list {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#history-list div {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #cbced1, -3px -3px 5px #fff;
+}
+/* ===== Variables Section ===== */
+#variables {
+  width: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ecf0f3;
+  box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#variables h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#variables input {
+  width: 70px;
+  height: 30px;
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: inset 3px 3px 5px #cbced1, inset -3px -3px 5px #fff;
+}
+
+#variables button {
+  width: 80px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #33cc33;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #2eb882, -3px -3px 5px #33cc33;
+  transition: 0.1s;
+}
+
+#variables button:hover {
+  box-shadow: inset 3px 3px 5px #2eb882, inset -3px -3px 5px #33cc33;
+  background: #2eb882;
+}
+
+.container {
+  width: 45%;
+  height: 70vh;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 12px 12px 20px #cbced1, -12px -12px 20px #ffff;
+}
+
+.display #screen {
+  width: 97%;
+  height: 70px;
+  font-size: 35px;
+  outline: none;
+  border: none;
+  text-align: right;
+  background: #ecf0f3;
+  border-radius: 6px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffff;
+}
+.btns {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btns .row button {
+  width: 70px;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffff;
+  transition: 0.1s;
+}
+.btns .row button:hover {
+  box-shadow: inset 5px 5px 8px #00000020, inset -5px -5px 8px #fff;
+  background: #fff;
+}
+#eval {
+  background: #33ccff;
+  color: #fff;
+  box-shadow: inset 5px 5px 8px #66d9ff, inset -5px -5px 8px #00ace6;
+}
+#eval:hover {
+  box-shadow: inset 5px 5px 8px #66d9ff, inset -5px 8px #00ace6;
+}
+#Ac {
+  background: #33cc33;
+  color: #fff;
+}
+#Ac:hover {
+  box-shadow: inset 5px 5px 8px #2eb882, inset -5px 8px #33cc33;
+}
+#Ce {
+  background: #ff3399;
+  color: #fff;
+}
+#Ce:hover {
+  box-shadow: inset 5px 5px 8px #e60073, inset -5px 8px #ff3399;
+}
+/* ===== Toast Notification ===== */
+#toast {
+  visibility: hidden;
+  min-width: 220px;
+  background: #ffffff;
+  color: #333;
+  text-align: center;
+  border-radius: 10px;
+  padding: 14px 20px;
+  position: fixed;
+  top: 20px; /* 👈 appears from top */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 9999;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  top: 50px; 
+}
+
+/* Success toast */
+#toast.success {
+  background: #33cc33;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(51, 204, 51, 0.4);
+}
+
+/* Error toast */
+#toast.error {
+  background: #ff3366;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 51, 102, 0.4);
+}
