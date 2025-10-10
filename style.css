@@ -160,7 +160,7 @@ body {
   border-radius: 10px;
   padding: 14px 20px;
   position: fixed;
-  top: 20px; /* 👈 appears from top */
+  top: 20px; /*  appears from top */
   left: 50%;
   transform: translateX(-50%);
   font-size: 16px;
